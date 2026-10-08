@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Student Information Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #222222;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1f4e79;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333333;
+            padding: 8px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+
+        .section-box {
+            background-color: white;
+            border: 1px solid #000000;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #student-info {
+            background-color: #ffffff;
+            border: 2px solid #000000;
+        }
+
+        h2 {
+            color: #1f4e79;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1f4e79;
+            color: white;
+        }
+
+        img {
+            width: 300px;
+            margin-top: 15px;
+        }
+
+        form {
+            background-color: white;
+            border: 1px solid #000000;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+        }
+
+        .gender-options input {
+            width: auto;
+        }
+
+        .gender-options label {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        button {
+            background-color: #1f4e79;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header id="home">
+        <img src="logo.png" alt="university logo">
+        <h1>University Student Information Portal</h1>
+    </header>
+
+    <nav>
+        <a href="#home">home</a>
+        <a href="#courses">courses</a>
+        <a href="#faculty">faculty</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <main>
+
+        <section id="student-info" class="section-box">
+            <h2>Student Info</h2>
+
+            <list>
+                <p><strong>Name</strong> Abdullah Mehmood</p>
+                <p><strong>Reg</strong> BCS241054</p>
+                <p><strong>Program</strong> BS Computer Science</p>
+                <p><strong>Semester</strong> 6 Semester</p>
+            </list>
+        </section>
+
+        <section id="courses" class="section-box">
+            <h2>Courses Offered</h2>
+
+            <ul>
+                <li>Web Application Development</li>
+                <li>Pakistan Studies</li>
+                <li>Parallel Distributed Computing</li>
+                <li>Artificial Intelligence</li>
+                <li>Numerical Computing</li>
+            </ul>
+        </section>
+
+        <section class="section-box">
+            <h2>Course Details</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Credit Hours</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>CS-01</td>
+                        <td>Web Application Development</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>CS-02</td>
+                        <td>Pakistan Studies</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>CS-03</td>
+                        <td>Parallel Distributed Computing</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>CS-04</td>
+                        <td>Artificial Intelligence</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>CS-05</td>
+                        <td>Numerical Computing</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="faculty" class="section-box">
+            <h2>Faculty</h2>
+
+            <ul>
+                <li>Islam-ud-Din</li>
+                <li>Ayesha Nabeel</li>
+                <li>Hira Firdous</li>
+                <li>Ghanza Iqbal</li>
+                <li>Halema Ajmal</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section-box">
+            <h2>Contact Details</h2>
+
+            <p><strong>UAN:</strong> +92-51-111-555-666</p>
+            <p><strong>Email:</strong> <a href="mailto:info@cust.edu.pk">info@cust.edu.pk</a></p>
+            <p><strong>Phone:</strong> +92-51-4486700-4</p>
+        </section>
+
+        <section id="registration">
+            <h2 style="margin-left: 20px;">Student Registration Form</h2>
+
+            <form action="#" method="post">
+
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="studentid">Student ID</label>
+                <input type="text" id="studentid" name="studentid" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+
+                <label>Gender</label>
+
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+
+                <label for="degree">Degree Program</label>
+
+                <select id="degree" name="degree">
+                    <option value="">Select Degree Program</option>
+                    <option value="BSCS">BS Computer Science</option>
+                    <option value="BSSE">BS Software Engineering</option>
+                    <option value="BSIT">BS Information Technology</option>
+                    <option value="BSAI">BS Artificial Intelligence</option>
+                </select>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="4"></textarea>
+
+                <button type="submit">Register</button>
+
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
